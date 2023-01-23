@@ -1,0 +1,138 @@
+/* Fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Mobile  */
+body {
+  background: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+.main {
+  border-radius: 12px;
+  background: hsl(0, 0%, 100%);
+}
+
+.product-img {
+  /* height: 12rem; */
+  /* max-width: 50%; */
+  /* height: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-chanel {
+  /* width: 320px;
+  height: 320px; */
+  max-width: 100%;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.product-info {
+  padding: 1.25rem 1rem;
+}
+#title-info {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+}
+h2 {
+  display: inline-block;
+  color: hsl(158, 36%, 37%);
+}
+.prices {
+  color: hsl(158, 36%, 37%);
+}
+.titles {
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+}
+p,
+.titles,
+#title-info,
+.prices {
+  padding: 0.5rem 0.5rem;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+.prices > h2 {
+  font-size: 2rem;
+  font-family: 'Fraunces', serif;
+}
+.prices > span {
+  margin-left: 2rem;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+.add {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  color: hsl(0, 0%, 100%);
+  background: hsl(158, 36%, 37%);
+  border: hsl(158, 36%, 37%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.add:hover {
+  background: hsl(158, 64%, 12%);
+  cursor: pointer;
+}
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    /* width: ; */
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    border-radius: 12px 0 0 12px;
+  }
+  .product-img {
+    width: 50%;
+  }
+  .product-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .titles {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+  .product-info {
+    padding: 1.25rem 2rem;
+  }
+}
